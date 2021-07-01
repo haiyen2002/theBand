@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.header{
+  
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+   
+}
+.nav-bar >div{
+    padding: 12px 24px;
+    color: white;
+}
+.nav-bar >div:hover{
+    background-color: #CCCCCC;
+    color: black;
+    cursor: pointer;
+}
+.fa-search{
+   color: white;
+    
+    
+    
+    
+}
+.box-drop{
+    position: relative;
+}
+.drop{
+    position: absolute;
+   bottom: 0;
+   transform: translate(0,100%);
+   left: 0;
+   color: black;
+  background-color: white;
+  display: none;
+  box-shadow: 0 0 20px grey;
+}
+.box-drop:hover .drop{
+    display: block;
+    cursor: pointer;
+}
+.drop div{
+  
+ padding: 12px 24px;
+ 
+   
+}
+.drop div:hover{
+    background-color: #cccccc;
+}
+.btn-search{
+    text-align: center;
+    width: 50px;
+    line-height: 46px;
+
+}
+.btn-search:hover{
+    background-color: red;
+    cursor: pointer;
+
+}
+.line{display: none;}
+
+ /* >=768 : col-md
+    <768:sm
+ */
+.member{
+    width: 60%;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+  
+}
+.member1{
+   width: 30%;
+  
+}
+.member1 img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.size-img >img{
+    width: 150px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 33px;
+    
+}
+.heading >i{
+    opacity: 0.7;
+    
+   
+}
+
+.first-text{
+    font-weight: 400;
+
+    letter-spacing: 4px;
+}
+.theband-section{
+    margin-top: 70px;
+}
+.text{
+   width: 60%;
+   margin: 0 auto;
+   text-align: justify;
+   
+}
+.member1 >.text-center{
+    text-align: center;
+}
+.size-img >img{
+    
+    border-radius: 5px;
+}
+.city{
+   width: 100%;
+}
+.size-city {
+    width: 33.333%;
+}
+
+.tour-section {
+    margin-top: 74px;
+}
+.heading-tour{
+    padding-top: 70px;
+}
+.size-city img {
+    width: 100%;
+}
+.city-list {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 70px;
+}
+.ticket-list{
+    padding: 0;
+}
+.city-item {
+    width: 32%;
+    background-color: white;
+    color: black;
+   
+}
+.city-item img {
+    width: 100%;
+}
+.city-item img:hover{
+    opacity: 0.6;
+}
+.tour-section{
+    background-color: black;
+    color: white;
+}
+.list{
+    width: 60%;
+}
+.list li{
+    border:1px solid #CCCCCC;
+    background-color: white;
+    color: black;
+    list-style: none;
+}
+.sold-out{
+    margin-left:30px ;
+    background-color: #F44336;
+}
+.number{
+    float: right;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+.text-describe{
+    margin-left: 12px;
+}
+.btn-buy{
+    background-color: black;
+    color: white;
+    margin: 12px 12px;
+    width:40%;
+   height: 40px;
+    border: none;
+   
+}
+.btn-buy:hover{
+    background-color: #CCCCCC;
+    color: black;
+}
+.bold{
+    margin-top: 30px;
+}
+.text-opa{
+    opacity: 0.6;
+}
+.howto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-down input{
+    width: 100%;
+    margin-top: 7px;
+}
+.input input, .input-down input{
+    border: 1px solid #CCCCCC;
+}
+.btn-send{
+    float:right ;
+    margin-top: 10px;
+    width: 20%;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 30px;
+}
+.btn-send:hover{
+    background-color: #CCCCCC;
+    color: black;
+}
+.footer{
+    width: 100%;
+    opacity: 0.7;
+  
+}
+.group-icon ,.text-footer{
+    text-align: center;
+    
+}
+.group-icon{
+    padding-top: 70px;
+}
+.group-icon span {
+    font-size: 20px;
+    
+}
+.group-icon span i:hover{
+    opacity: 0.5;
+}
+.group-icon span i{
+    padding: 5px 5px;
+    
+}
+.text-footer a{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:740px){
+    .cpu{
+        display: none;
+    }
+   div .btn-search .search {
+       display: none;
+   }
+   .btn-search:hover{
+    background-color: #CCCCCC;
+    cursor: pointer;
+   
+   }
+   .btn-search:hover .line{
+       color: black;
+   }
+   .line{
+       display: block;
+       color: white;
+   }
+}
